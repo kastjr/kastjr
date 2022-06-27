@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @kastjr  estudante de Análise e desenvolvimento de Sistemas
-- 👀 I’m interested in  trabalhar como dev
-- 🌱 I’m currently learning  a programar em javascript
-- 💞️ I’m looking to collaborate on  projetos
+- 👋 Hi, I’m @kastjr student of Systems analist and development 
+- 👀 I’m interested in job like dev 
+- 🌱 I’m currently learning to programming in JavaScript 
+- 💞️ I’m looking to collaborate on  projects
 - 📫 How to reach me  instagram @kastier_jr
 
 <!---
