@@ -1,4 +1,4 @@
-
+//funcoes para vetores
 
 function novo_vetor(tamanho){
     const vetor = new Array(tamanho)
