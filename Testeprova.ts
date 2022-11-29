@@ -3,6 +3,10 @@ class Pessoa {
     constructor(nome: string) {
         this.nome = nome;
     }
+    
+    getNome() {
+        return this.nome
+    }
 }
 /*
 let p : Pessoa = new Pessoa("ely");
