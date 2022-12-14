@@ -43,6 +43,8 @@ class Luta {
 			console.log("## DESAFIANTE ##");
 			this.desafiante.apresentar();
 			
+                        console.log(getRandomInt(3));
+                        // expected output: 0, 1 or 2
 			Random aleatorio = new Random();
 			int vencedor = aleatorio.nextInt(3);// 0 1 2
 			switch(vencedor){
