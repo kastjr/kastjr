@@ -2,17 +2,25 @@
 
 //import java.util.Random;
 
-public class Luta {
+class Luta {
 	//Atributos
 	
-	private Lutador desafiado;
-	private Lutador desafiante;
-	private int rounds;
-	private boolean aprovada;
+    private desafiado : Lutador;
+	private desafiante : Lutador;
+	private rounds : number;
+    private aprovada : boolean;
+
+    constructor(desafiado : Lutador , desafiante : Lutador , rounds : number , aprovada : boolean) {
+        this.desafiado = desafiado;
+        this.desafiante = desafiante;
+        this.rounds = rounds;
+        this.aprovada = aprovada;
+    }
+	
 	
 	//Metodos
 	
-	public void marcarLuta(Lutador l1,Lutador l2) {
+	public marcarLuta(l1 : Lutador, l2 : Lutador) : void {
 		if ((l1.getCategoria() == l2.getCategoria()) &&l1 !=l2) {
 			this.aprovada  = true;
 			
@@ -23,73 +31,73 @@ public class Luta {
 		} else {
 
 			this.aprovada = false;
-			this.desafiado = null;
-			this.desafiante = null;
+			//this.desafiado = null;
+			//this.desafiante = null;
 		}
 	}
 	
-	public void lutar() {
+	public lutar() : void {
 		if (this.aprovada) {
-			System.out.println("## DESAFIADO ##");
+			console.log("## DESAFIADO ##");
 			this.desafiado.apresentar();
-			System.out.println("## DESAFIANTE ##");
+			console.log("## DESAFIANTE ##");
 			this.desafiante.apresentar();
 			
 			Random aleatorio = new Random();
 			int vencedor = aleatorio.nextInt(3);// 0 1 2
 			switch(vencedor){
 			case 0:
-				System.out.println("EMPATOU");
+				console.log("EMPATOU");
 				this.desafiado.empatarLuta();
 				this.desafiante.empatarLuta();
 				break;
 			case 1:
-				System.out.println("VENCEU " + this.desafiado.getNome());
+				console.log("VENCEU " + this.desafiado.getNome());
 				this.desafiado.ganharLuta();
 				this.desafiante.perderLuta();
 				break;
 			case 2:
-				System.out.println("VENCEU " + this.desafiante.getNome());
+				console.log("VENCEU " + this.desafiante.getNome());
 				this.desafiado.perderLuta();;
 				this.desafiante.ganharLuta();;
 				break;
 			}
 		} else {
-	     System.out.println("A luta não pode acontecer!");
+	     console.log("A luta não pode acontecer!");
 		}
 	}
 
 	//Metodos especiais
 	
-	public Lutador getDesafiado() {
-		return desafiado;
+	public  getDesafiado() : Lutador {
+		return this.desafiado;
 	}
 
-	public void setDesafiado(Lutador desafiado) {
+	public setDesafiado(desafiado : Lutador) : void {
 		this.desafiado = desafiado;
 	}
 
-	public Lutador getDesafiante() {
-		return desafiante;
+	public getDesafiante() : Lutador  {
+		return this.desafiante;
 	}
 
-	public void setDesafiante(Lutador desafiante) {
+	public setDesafiante( desafiante : Lutador): void{
 		this.desafiante = desafiante;
 	}
 
-	public int getRounds() {
-		return rounds;
+	public getRounds():number {
+		return this.rounds;
 	}
 
-	public void setRounds(int rounds) {
+	public setRounds(rounds:number) : void {
 		this.rounds = rounds;
 	}
 
-	public boolean isAprovada() {
-		return aprovada;
+	public isAprovada() : boolean {
+		return this.aprovada;
 	}
 
-	public void setAprovada(boolean aprovada) {
+	public setAprovada (aprovada : boolean) : void {
 		this.aprovada = aprovada;
 	}
 	
