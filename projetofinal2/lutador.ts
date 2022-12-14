@@ -8,10 +8,9 @@ class Lutador {
 	private peso!: number;
 	private categoria!: string;
 	private vitorias : number ; 
-        private derrotas : number ;  
-        private empates : number;
+    private derrotas : number ;  
+    private empates : number;
 	private id_tecnico : number;
-
 	//METODOS PUBLICOS
 	
 	
@@ -51,7 +50,7 @@ class Lutador {
 	//public Lutador() {
 	//}
 
-    constructor(nome:string, nacionalidade : string, idade : number, altura : number, peso : number, vitorias : number , derrotas : number, empates: number) {
+    constructor(nome:string, nacionalidade : string, idade : number, altura : number, peso : number, vitorias : number , derrotas : number, empates: number, id_tecnico : number) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
         this.idade = idade;
@@ -60,6 +59,7 @@ class Lutador {
         this.vitorias = vitorias;
         this.derrotas = derrotas;
         this.empates = empates;
+        this.id_tecnico = id_tecnico;
     }
 	
 	/*public Lutador(String nome , String nacionalidade , int idade , float altura , float peso , int vitorias , int derrotas , int empates ) {
@@ -157,6 +157,12 @@ class Lutador {
 		this.empates = empates;
 	}
 	
-	
+	public  getId_tecnico() : number {
+		return this.id_tecnico;
+	}
+
+	public setId_tecnico(Id_tecnico : number) : void {
+		this.id_tecnico = Id_tecnico;
+	}
 	
 }
