@@ -8,9 +8,10 @@ class Lutador {
 	private peso!: number;
 	private categoria!: string;
 	private vitorias : number ; 
-    private derrotas : number ;  
-    private empates : number;
-	
+        private derrotas : number ;  
+        private empates : number;
+	private id_tecnico : number;
+
 	//METODOS PUBLICOS
 	
 	
