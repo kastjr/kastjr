@@ -1,0 +1,40 @@
+podemos usar a fórmula da distância percorrida, que é d = v * t, onde d é a distância percorrida, v é a velocidade e t é o tempo.
+
+Primeiro, precisamos calcular o tempo que levará para eles se encontrarem. Como eles estão se aproximando um do outro, podemos somar as 
+velocidades para encontrar a velocidade relativa entre eles:
+
+v_rel = v_carro + v_caminhão
+v_rel = 110 km/h + 80 km/h
+v_rel = 190 km/h
+
+A distância total que eles precisam percorrer é de 100 km, e como eles estão se aproximando, podemos considerar que cada um percorre
+metade da distância. Então a distância percorrida pelo carro será:
+
+d_carro = v_rel * t
+50 km = 190 km/h * t
+
+E a distância percorrida pelo caminhão será:
+
+d_caminhão = v_caminhão * (t + 5/60) + v_rel * (t - 5/60)
+50 km = 80 km/h * (t + 5/60) + 190 km/h * (t - 5/60)
+
+Resolvendo essa equação, obtemos:
+
+t = 0,247 horas
+
+Agora que sabemos o tempo, podemos calcular a distância percorrida pelo carro e pelo caminhão:
+
+d_carro = 110 km/h * 0,247 h
+d_carro = 27,17 km
+
+d_caminhão = 80 km/h * (0,247 h + 5/60)
+d_caminhão = 20,67 km
+
+Portanto, quando eles se cruzarem, o carro estará mais próximo da cidade de Ribeirão Preto, já que ele terá percorrido uma distância
+maior em relação à cidade do que o caminhão. A diferença entre as distâncias é:
+
+d_carro - d_caminhão = 6,5 km
+
+Essa diferença é maior do que a distância entre a cidade e o primeiro pedágio (que é de aproximadamente 2,5 km), portanto, 
+mesmo considerando que o caminhão terá que parar em dois pedágios, o carro ainda estará mais próximo da cidade de Ribeirão Preto
+quando eles se cruzarem na rodovia.
